@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "LatoItalic";
+
+  src: url("../fonts/Lato/Lato-Thin.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "LatoItalicBold";
+
+  src: url("../fonts/Lato/Lato-BoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+:root {
+ --beg:#fbceb5;
+ --white:#fff;
+ --black:#000;
+ --color-input:rgba(255, 255, 255, 0.08);
+}
+
+body {
+  background-image: url(../images/back_ground.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  font-family: "LatoItalic","Arial", "sans-serif";
+  color: var(--white);;
+  font-size: 28px;
+  font-weight: lighter;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  align-items: center;
+}
+
+.inputData {
+  background-color:var(--color-input);
+
+  border: none;
+  border-radius: 40px;
+  margin: 5px;
+  height: 30px;
+  width: 250px;
+  padding: 0 20px;
+}
+
+.inputData:hover,
+.inputData:focus {
+  border: 1px solid var(--white);;
+  outline: none;
+}
+
+.inputData::placeholder {
+  color: var(--white);
+  font-family: "LatoItalic","Arial", "sans-serif";
+}
+
+.buttonSingn {
+  background: var(--beg);;
+  border: none;
+  font-size: 16px;
+  color: var(--black);
+  border-radius: 40px;
+  margin: 5px;
+  height: 30px;
+  width: 290px;
+}
+
+.check {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 290px;
+}
+a {
+  font-family: "LatoItalicBold","Arial", "sans-serif";
+  text-decoration: none;
+  color:var(--white);
+  font-size: 16px;
+}
+
+label {
+  color: var(--beg);
+}
+
+p {
+  margin: 20px;
+
+  font: 16px, "LatoItalicBold","Arial", "sans-serif";
+  color:var(--white)
+}
+
+.network-btn-container {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.network-btn-container a {
+  background: var(--white);
+  width: 146px;
+  border: none;
+  height: 30px;
+  font: 16px, "LatoItalic","Arial", "sans-serif";
+  transition-duration: 0.5s;
+  color:var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.network-btn-container a:hover {
+  background:var(--black);
+  color: var(--white);
+}
